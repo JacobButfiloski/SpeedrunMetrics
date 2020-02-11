@@ -1,0 +1,55 @@
+html, body {
+    background-color: #353535;
+    height: 100%
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.searchbar {
+    background-color: #585858;
+    color: white;
+    border-style: none;
+    width: 100%;
+}
+
+#searchstats {
+    background-color: #808080;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
