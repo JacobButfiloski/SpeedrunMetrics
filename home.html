@@ -2,28 +2,54 @@
 <html ng-app>
   <head>
     <!--Styles-->
-    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <link rel="stylesheet" type="text/css" href="style/home.css">
     <!--Angular JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <!--Launch Image JS-->
+    <script src="scripts/launchimg.js"></script>
+
+    <div style="background-color: #2e2e2e;">
+      <img src="img/logo.png" class="logo">
+      <ul style=" min-width: 500px;">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="player.html">Player Stats</a></li>
+          <li><a href="contact.asp">Game Stats</a></li>
+          <li><a href="about.asp">About</a></li>
+      </ul>
+      
+  </div>
   </head>
-  <body>
-    <div class="head">
-        <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-        </ul>
-        
-
+  <body onload="rndmimg()">
+    <div id="launchcontainer">
+      <div id="launchheader">
+        <h2>Welcome to SpeedrunMetrics</h2>
+        <label id="launchlabel">Your New Hub for Speedrun Stats</label>
+      </div>
     </div>
-
-    <div id="searchstats">
-        <img src="https://i.ya-webdesign.com/images/magnifying-clipart-inspiration.png" class="icon" style="color: white; diplay: table-cell;">
-        <label style="color:white; display: table-cell; vertical-align: middle;">Search Player Stats</label>
-    </div>
-
-        <div id="searchgames">
-    </div>
+      <!--Info Panels-->
+      <div id="infowrapper">
+          <div id="graphs">
+            <img src="img/icons/analysis.png" class="icons">
+            <br>
+            <label class="infoheader">Split Graphs</label>
+            <p>Visualize your various data. From PB's, game activity, and more.</p>
+            <button class="infobutton">View</button>
+          </div>
+          <div id="playerstats">
+            <img src="img/icons/evaluation.png" class="icons">
+            <br>
+            <label class="infoheader">Player Statistics</label>
+            <p>View broken down player statistics and data.</p>
+            <button class="infobutton" onclick="playerstatsopen()">View</button>
+          </div>
+          <div id="gamestats">
+            <img src="img/icons/deadline.png" class="icons">
+            <br>
+            <label class="infoheader">Game Statistics</label>
+            <p>View various data related to individual games.</p>
+            <button class="infobutton">View</button>
+          </div>
+      </div>
+    
   </body>
 </html>

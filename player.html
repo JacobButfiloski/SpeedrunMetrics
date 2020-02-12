@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="style/player.css">
+    <!--Angular JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="scripts/playerstats.js"></script>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+    <div style="background-color: #2e2e2e;">
+      <img src="img/logo.png" class="logo">
+      <ul style=" min-width: 500px;">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="player.html">Player Stats</a></li>
+          <li><a href="contact.asp">Game Stats</a></li>
+          <li><a href="about.asp">About</a></li>
+      </ul>
+      
+  </div>
+  </head>
+
+  <body>
+      <input type="text" class="searchbar" id="search">
+      <button onclick="search()" class="infobutton">Search</button>
+      <div id="user">
+          <img id="pfp">
+          <h2 id="profilename" style="float: center;"></h2>
+      </div>
+
+      <div id="pbs">
+        <h1 class="sectionlabel">Personal Bests</label>
+        <p id="pb" class="time"></p>
+      </div>
+
+      <div id="chartContainer" style="height: 370px; width: 50%; float: right;"></div>
+
+  </body>

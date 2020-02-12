@@ -1,0 +1,154 @@
+html, body {
+    background-color: #353535;
+    height: 100%;
+    font-family: roboto;
+    color: white;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.searchbar {
+    background-color: #585858;
+    color: white;
+    border-style: none;
+    width: 100%;
+}
+
+#searchstats {
+    background-color: #808080;
+    width: 45%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.icons {
+  width: 80px;
+  height: 80px;
+}
+
+.logo {
+  width: 180px;
+  height: 25px;
+  float: left;
+  margin-top: 10px;
+}
+
+#launchcontainer {
+  display: table; 
+  align-self: center;
+  width: 100%;
+}
+
+#launchheader {
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+  width: 300px;
+  height: 400px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  text-align: center;
+  display: table-cell; 
+  vertical-align: middle;
+}
+h2 {
+  font-size: 75px;
+}
+
+#infowrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px, 15px;
+}
+
+#graphs {
+  width: 300px;
+  height: 250px;
+  padding: 15px, 15px;
+  margin: 10px;
+  background-color: #111;
+  display: inline-block;
+}
+
+#playerstats {
+  width: 300px;
+  height: 250px;
+  padding: 15px, 15px;
+  background-color: #111;
+  margin: 10px;
+  display: inline-block;
+}
+
+#gamestats {
+  width: 300px;
+  height: 250px;
+  padding: 15px, 15px;
+  background-color: #111;
+  margin: 10px;
+  display: inline-block;
+}
+
+.infoheader {
+  font-weight: bold;
+}
+
+.infobutton {
+  border-style: none;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100px;
+  height: 50px;
+  font-family: roboto;
+  color:white;
+}
+.infobutton:hover {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 1);
+  width: 100px;
+  height: 50px;
+  font-family: roboto;
+  color:white;
+}
