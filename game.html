@@ -2,10 +2,10 @@
 <html ng-app>
   <head>
     <!--Styles-->
-    <link rel="stylesheet" type="text/css" href="style/player.css">
+    <link rel="stylesheet" type="text/css" href="style/game.css">
     <!--Angular JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script src="scripts/playerstats.js"></script>
+    <script src="scripts/gamestats.js"></script>
     <script src="lib/jquery-3.4.1.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     
@@ -22,16 +22,18 @@
   </head>
 
   <body>
-      <input type="text" class="searchbar" id="search">
-      <button onclick="search()" class="infobutton">Search</button>
-      <div id="user">
-          <img id="pfp">
-          <h2 id="profilename" style="float: center;"></h2>
+      <div>
+        <input type="text" class="searchbar" id="search">
+        <button onclick="search()" class="infobutton">Search</button>
+    </div>
+      <div id="gameinfo">
+          <img id="ico">
+          <h1 id="gametitle"></h1>  
       </div>
 
-      <div id="pbs">
-        <h1 class="sectionlabel">Personal Bests</label>
-        <p id="pb" class="time"></p>
+      <div id="wr">
+        <h1 class="sectionlabel">World Record</label>
+        <p id="wrtext" class="time"></p>
       </div>
 
       <div id="chartContainer" style="height: 370px; width: 50%; float: right;"></div>
